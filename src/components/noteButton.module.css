@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+.name {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.nameContainer {
+    padding: 2rem 1rem;
+    text-align: left;
+    width: 80%;
+    overflow: hidden;
+}
+.button:hover {
+    background-color: #DAE5F5;
+    cursor: pointer;
+}
