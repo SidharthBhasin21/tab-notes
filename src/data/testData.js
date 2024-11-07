@@ -8,6 +8,7 @@ const notes = [
             'The purpose of this is to learn to write in your own words and develop a sense of writing style. Another use is to study the structure of the paragraph. Study how the sentences flow and how the paragraph connects to the rest of the text.',
         ]
     },
+    { id: 'LM', name: 'Nancy XYX', color: 'skyblue', content: [] },
     { id: 'MP', name: 'My personal grp', color: 'red', content: [] },
     { id: 'JG', name: 'Javascript grp', color: 'pink', content: [] },
     { id: 'HG', name: 'HTML grp', color: 'skyblue', content: [] },
