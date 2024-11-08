@@ -4,8 +4,16 @@ const notes = [
         name: 'My Notes', 
         color: 'blue', 
         content: [
-            'Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning.',
-            'The purpose of this is to learn to write in your own words and develop a sense of writing style. Another use is to study the structure of the paragraph. Study how the sentences flow and how the paragraph connects to the rest of the text.',
+            {
+                note: "This is my first note",
+                time: "12:00 PM",
+                date: "2021-07-01"
+            },
+            {
+                note: "This is my first note",
+                time: "12:00 PM",
+                date: "2021-07-01"
+            }
         ]
     },
     { id: 'LM', name: 'Nancy XYX', color: 'skyblue', content: [] },
