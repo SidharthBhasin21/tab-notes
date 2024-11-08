@@ -95,3 +95,18 @@ textarea:focus {
     align-items: center;
     gap: 0.5rem;
 }
+
+.backButton {
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 24px;
+}
+
+@media (max-width: 425px) {
+    .backButton {
+        display: block;
+    }
+}

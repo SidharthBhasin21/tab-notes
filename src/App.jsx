@@ -11,7 +11,7 @@ function App() {
   const [activeNote, setActiveNote] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  console.log(activeNote)
+  // console.log(activeNote)
   useEffect(() => {
     setNotes(JSON.parse(localStorage.getItem('notes')))
   },[showModal])
@@ -28,7 +28,15 @@ function App() {
               key={note.id}
               color={note.color}
               name={note.name}
-              onClick={() => setActiveNote(note)}
+              onClick={() => {
+                setActiveNote(note)
+                if(window.innerWidth<425){
+
+                  document.querySelector('.sidebar-container').style.display = 'none';
+                  document.querySelector('.main-content').style.display = 'block';
+                }
+              }
+              }
             />
           ))}
         </div>

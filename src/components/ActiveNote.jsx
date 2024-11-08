@@ -5,6 +5,8 @@ import { v4 as uuid } from 'uuid';
 import dayjs from "dayjs";
 import { IoMdSend } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
+import { IoMdArrowRoundBack } from "react-icons/io";
+
 
 const ActiveNote = ({name,color}) => {
   const [currNote, setCurrNote] = useState("");
@@ -54,6 +56,12 @@ const ActiveNote = ({name,color}) => {
   return (
     <div className={styles.mainContainer}>
         <div className={styles.header}>
+            <button className={styles.backButton}
+              onClick={() => {
+                document.querySelector('.sidebar-container').style.display = 'block';
+                document.querySelector('.main-content').style.display = 'none';
+              }}
+            ><IoMdArrowRoundBack /></button>
             <NoteIcon name={name} color={color} />
             <h1>{name}</h1>
         </div>
