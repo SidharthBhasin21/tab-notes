@@ -16,7 +16,6 @@ const notes = [
             }
         ]
     },
-    { id: 'LM', name: 'Nancy XYX', color: 'skyblue', content: [] },
     { id: 'MP', name: 'My personal grp', color: 'red', content: [] },
     { id: 'JG', name: 'Javascript grp', color: 'pink', content: [] },
     { id: 'HG', name: 'HTML grp', color: 'skyblue', content: [] },

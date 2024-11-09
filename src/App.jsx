@@ -23,7 +23,7 @@ function App() {
         <div className="sidebar-content">
           <h1 className="heading">Pocket Notes</h1>
 
-          {notes && notes.map((note) => (
+          {notes?.map((note) => (
             <NoteButton
               key={note.id}
               color={note.color}
